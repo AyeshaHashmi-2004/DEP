@@ -1,13 +1,38 @@
+css
+Copy code
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+#chat-container {
+  width: 300px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#messageInput {
+  width: calc(100% - 80px);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#sendMessage {
+  width: 70px;
+  padding: 10px;
 }
